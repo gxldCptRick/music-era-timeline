@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset = "utf-8">
-        <title>Musical Timeline</title>
-        <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Muli" rel="stylesheet">
-        <link rel = "stylesheet" href = "stylesheets/main.css">
-    </head>
-    <body>
-        <header class = "row">
-            <h1 class = "col-3">Classical Music Timeline</h1>
-            <navbar class = "col-9">
-                <ul class = "col-12 nav" id = "myNav">
-                    <li><a href = "#eraMedieval">Medieval Era</a></li>
-                    <li><a href = "#eraRenaissance">Renaissance Era</a></li>
-                    <li><a href = "#eraBaroque">Baroque Era</a></li>
-                    <li><a href = "#eraClassical">Classical Era</a></li>
-                    <li><a href = "#eraRomantic">Romantic Era</a></li>
-                    <li><a href = "#eraModern">Modern Era</a></li>
-                   <li class="icon"><a>☰</a></li>
-                </ul>
-            </navbar>
-        </header>
-        <main>
-            <div class = "row title" id = "eraMedival">
-                <h2>Medival Era</h2>
-                <h2>500-1400</h2>
+
+<head>
+    <meta charset="utf-8">
+    <title>Musical Timeline</title>
+    <link href="https://fonts.googleapis.com/css?family=Aref+Ruqaa|Muli" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+    <header class="row">
+        <h1 class="col-3">Classical Music Timeline</h1>
+        <navbar class="col-9">
+            <ul class="col-12 nav" id="myNav">
+                <li><a href="#eraMedieval">Medieval Era</a></li>
+                <li><a href="#eraRenaissance">Renaissance Era</a></li>
+                <li><a href="#eraBaroque">Baroque Era</a></li>
+                <li><a href="#eraClassical">Classical Era</a></li>
+                <li><a href="#eraRomantic">Romantic Era</a></li>
+                <li><a href="#eraModern">Modern Era</a></li>
+                <li class="icon"><a>☰</a></li>
+            </ul>
+        </navbar>
+    </header>
+    <main>
+        <div class="row title" id="eraMedival">
+            <h2>Medival Era</h2>
+            <h2>500-1400</h2>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <img class=" timeline-photo-vertical myImg" src="https://s-media-cache-ak0.pinimg.com/originals/7a/2f/4d/7a2f4dbbf541ada6382cd8aff5c3e4ae.jpg">
+                <figcaption class="caption">HildeGard von Bingen</figcaption>
+                <figcaption class="caption">1098-1179</figcaption>
             </div>
-            <div class = "row">
-                <div class = "col-5">
-                    <img class = " timeline-photo-vertical  ">
-                </div>
-                <div class = "modal">
-                </div>
-                <div class = "col-2 timeline">
-                    <p class = "col-12">500</p>
-                </div>
-                <div class = "col-5">
-                </div>
-                <div class = "modal">
-                </div>
+            <div class="modal myModal">
+                <span class="close">x</span>
+                <img class="img01 modal-content">
+
+                <p class="cap"> Hildegard von Bingen also known as saint hildegard and sibyl of the rhine was a german nun and also considered the founder of the scientific natural history, the research and study of organisms, in germany. She was born around the year 1098, although an exact date is uncertain. Hildegard was having visions from an early age and thus was given to the church by her parents. While serving in the church she was writing church music and wrote many songs including Alleluia, o virga mediatrix. Hildegard von Bingen died the 17th of september in 1179. </p>
+                <audio controls>
+                    <source src="./songs/alleluia, o virga mediatrix.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                </audio>
+                <p class="cap">
+                    Alleluia, o virga mediatrix was a monophonic piece that was gregorian chant in the Choral Music Genre and has no rhythm because of the time it was created composers were not thinking of music in that kind of detail let alone the fact that they only had a limited way to be able to express their musical ideas.
+                </p>
             </div>
-        </main>
-    </body>
-    <script src = "scripts/main.js"></script>
+            <div class="col-2 timeline">
+                <p class="col-12">1080</p>
+            </div>
+            <div class="col-5">
+            </div>
+            <div class="modal myModal">
+                <img class="modal-content img01">
+                <p class="cap"></p>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="scripts/main.js"></script>
+
 </html>

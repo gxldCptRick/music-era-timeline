@@ -39,9 +39,7 @@ body {
     color: #fff;
     font-size: 1.5em;
 }
-.title{
-    background-color: rgba(0, 0, 0, .4);
-}
+
 ul.nav {
     border-radius: 7px 7px;
     list-style-type: none;
@@ -49,7 +47,6 @@ ul.nav {
     padding: 0;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.4);
-    position: fixed;
 }
 
 ul.nav li {
@@ -112,16 +109,19 @@ h2 {
     width: 100%;
 }
 
-.timezone{
+.timezone {
     margin: 0;
     padding: 0;
 }
-
 
 .row::after {
     content: "";
     clear: both;
     display: block;
+}
+
+.title {
+    background-color: rgba(0, 0, 0, .4);
 }
 
 
@@ -166,7 +166,12 @@ h2 {
     text-align: center;
     color: #fff;
     max-width: 500px;
-    background: #ff4455;
+    background-color: rgba(52, 50, 50, .7);
+}
+
+audio {
+    margin: 0 10%;
+    float: left;
 }
 
 
@@ -323,10 +328,15 @@ h2 {
     .cap {
         margin: 1% 30%;
     }
+    audio {
+        margin: 0 37%;
+    }
 }
 
 @media screen and (max-width:680px) {
-    ul.nav li:not(:first-child) {display: none;}
+    ul.nav li:not(: first-child) {
+        display: none;
+    }
     ul.nav li.icon {
         float: right;
         display: inline-block;
